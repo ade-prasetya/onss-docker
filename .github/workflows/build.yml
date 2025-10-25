@@ -30,7 +30,7 @@ jobs:
         with:
           context: .
           push: true
-          tags: ade-prasetya/onss:latest
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/onss:latest
 
       - name: ✅ Build Success
         run: echo "🎉 Docker image berhasil dibuild dan di-push ke Docker Hub!"
